@@ -1,6 +1,10 @@
 <?php
 
-class TestCase extends Illuminate\Foundation\Testing\TestCase
+namespace Test;
+
+use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+
+class TestCase extends BaseTestCase
 {
     /**
      * The base URL to use while testing the application.

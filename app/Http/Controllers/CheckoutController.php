@@ -4,6 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Services\Checkout;
 
+/**
+ * Controller to enable placing orders
+ *
+ * Class CheckoutController
+ * @package App\Http\Controllers
+ */
 class CheckoutController extends Controller
 {
     /**
