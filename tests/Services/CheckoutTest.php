@@ -5,6 +5,12 @@ namespace Test\Services;
 use App\Services\Checkout;
 use Test\TestCase;
 
+/**
+ * Tests for checkout service
+ *
+ * Class CheckoutTest
+ * @package Test\Services
+ */
 class CheckoutTest extends TestCase
 {
     /**
@@ -50,6 +56,4 @@ class CheckoutTest extends TestCase
             sprintf('Testing total calculation for %s.', $paymentMethod)
         );
     }
-
-
 }
