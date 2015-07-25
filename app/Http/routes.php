@@ -15,6 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/place', [
+Route::get('/place/{paymentMethod}', [
     'as' => 'order-place', 'uses' => 'CheckoutController@placeOrder'
 ]);
