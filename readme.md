@@ -18,7 +18,7 @@ To clone and run this locally do the following:
 
 ## Run tests
 
-PHPUnit is used to write the unit tests, to run the tests run the following command after composer install
+PHPUnit is used to write the unit tests, to run the tests run the following command after composer install is done.
 
 ```
 >./vendor/bin/phpunit
