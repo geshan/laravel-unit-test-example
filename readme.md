@@ -10,6 +10,7 @@ To clone and run this locally do the following:
 
 * git clone git@github.com:geshan/laravel-unit-test-example.git
 * cd laravel-unit-test-example
+* cp .env.example .env
 * run `composer install --prefer-dist`
 * cd public
 * php -S localhost:8000
