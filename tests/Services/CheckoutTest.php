@@ -34,8 +34,10 @@ class CheckoutTest extends TestCase
     public function paymentMethodProvider()
     {
         return [
-            ['Cash', 100.00],
-            ['Credit Card', 95.00]
+            ['Cash', 'me@mydomain.com', 100.00],
+            ['CreditCard', 'me@mydomain.com', 95.00],
+            ['PayPal', 'myName@gmail.com', 95.00],
+            ['PayPal', 'me@mydomain.com', 0.00]
         ];
     }
 
@@ -48,10 +50,10 @@ class CheckoutTest extends TestCase
      *
      * @dataProvider paymentMethodProvider
      */
-    public function testCalculateTotal($paymentMethod, $expectedTotal)
+    public function testCalculateTotal($paymentMethod, $email, $expectedTotal)
     {
         $this->assertEquals(
-            $this->checkout->calculateTotal($paymentMethod),
+            $this->checkout->calculateTotal($paymentMethod, $email),
             $expectedTotal,
             sprintf('Testing total calculation for %s.', $paymentMethod)
         );

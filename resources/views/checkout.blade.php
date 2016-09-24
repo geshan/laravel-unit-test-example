@@ -38,7 +38,13 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Checkout for {{ $paymentMethod }} with total {{ $orderTotal }}</div>
+                <div class="title">
+                    @if ($orderTotal)
+                        Checkout for {{ $paymentMethod }} with total {{ $orderTotal }}
+                    @else
+                        Payment method {{ $paymentMethod }}, is not valid.
+                    @endif
+                </div>
             </div>
         </div>
     </body>

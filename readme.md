@@ -13,7 +13,7 @@ To clone and run this locally do the following:
 * cp .env.example .env
 * run `composer install --prefer-dist`
 * cd public
-* php -S localhost:8000
+* php -S localhost:8000 or php artisan serve from the project root
 * try `http://localhost:8000/place/Cash` on your browser you should see `Checkout for Cash with total 100`
 * try `http://localhost:8000/place/CreditCard` on your browser you should see `Checkout for CreditCard with total 95`
 
