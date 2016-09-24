@@ -30,12 +30,15 @@ class CheckoutController extends Controller
     /**
      * Place order
      *
-     * @return \Illuminate\View\View
+     * @param string $paymentMethod
+     * @param string $email
+     *
+     * @return $this
      */
-    public function placeOrder($paymentMethod)
+    public function placeOrder($paymentMethod, $email='test@mydomain.com')
     {
         $view = view('checkout')->with('paymentMethod', $paymentMethod);
-        $view->with('orderTotal', $this->checkout->calculateTotal($paymentMethod));
+        $view->with('orderTotal', $this->checkout->calculateTotal($paymentMethod, $email));
 
         return $view;
     }
