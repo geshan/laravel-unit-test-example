@@ -1,5 +1,7 @@
 ## Laravel Unit testing example
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/geshan/laravel-unit-test-example.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/geshan/laravel-unit-test-example.svg?branch=master)](https://travis-ci.org/geshan/laravel-unit-test-example)
 
 Usually I see tutorials to tests Laravel which are just functional tests, I think unit testing should be given priority too. Done for this blog [post](http://bit.ly/laravel-unit-test).
